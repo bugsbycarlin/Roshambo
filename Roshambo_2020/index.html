@@ -1,0 +1,59 @@
+
+<html>
+  <head>
+    <title>Roshambo</title>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel=”image_src” href=”http://goodgamelab.com/JCM/preview.jpg” />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Roshambo" />
+    <meta property="og:description" content="Rock Paper Scissors Robot Shooter" />
+    <style type="text/css">
+      #mainDiv
+      {
+        position: relative;
+        margin:0;
+        padding:0;
+        width: 1080px;
+        height: 450px;
+        left: 50%;
+        top: 40px;
+        margin-left: -540px;
+        background-color: #404040;
+        
+        overflow: hidden;
+      }
+      #loadingdiv
+      {
+        position: absolute;
+        background-color: #404040;
+        width: 1080px;
+        height: 80;
+        left: 430px;
+        top: 180;
+        margin-left: 0px;
+        font-size: 50px;
+        font-family: serif;
+        color: #404040;
+      }
+      #canvas
+      {
+        visibility: hidden;
+      }
+    </style>
+    <script type="text/javascript" src="Source/jquery.min.js"></script>
+    <script type="text/javascript" src="Source/game.js"></script>
+  </head>
+  <body bgcolor = #404040 onload="initialize();">
+    
+    <audio preload="auto" id="watiz" >
+      <source src="Sound/watiz.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="mainDiv">
+      <div id="loadingdiv">
+        Loading...
+      </div>
+      <canvas id="canvas"></canvas>
+    </div>
+  </body>
+</html>
